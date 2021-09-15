@@ -1,4 +1,4 @@
-package pratica;
+package pratica.repeticao;
 import java.util.*;
 
 public class CadastroPessoas {

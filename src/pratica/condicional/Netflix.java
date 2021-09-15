@@ -1,4 +1,4 @@
-package pratica;
+package pratica.condicional;
 import java.sql.SQLOutput;
 import java.util.*;
 
