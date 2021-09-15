@@ -42,17 +42,17 @@ public class CadastroPessoas {
                         System.out.println("CPF precisa ter no mínimo 11 caracteres!\nCPF: ");
                         cpf = sc.nextLine();
                     }
-
+                    System.out.println("Cliente cadastrado com sucesso! ");
                     break;
 
-                case (2):
-                    System.out.println("*Nenhum cliente por aqui*");
-                    break;
+                    case (2):
+                        System.out.println("*Nenhum cliente por aqui*");
+                        break;
 
-                default :
-                    System.out.println("Volte sempre (◠‿・)—☆");
-                    break;
-            }
+                    default :
+                        System.out.println("Volte sempre (◠‿・)—☆");
+                        break;
+                }
         }while(opcao != 3);
     }
 }
