@@ -8,7 +8,7 @@ public class calculadora {
 
     static double readNumber(String message){
         System.out.println(message);
-        double number = Integer.parseInt(sc.nextLine());
+        double number = Double.parseDouble(sc.nextLine());
         return number;
     }
 
