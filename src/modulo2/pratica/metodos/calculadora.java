@@ -36,9 +36,9 @@ public class calculadora {
         double rSub = subtraction(n1, n2);
         double rMul = multiplication(n1, n2);
         double rDiv = division(n1, n2);
-        System.out.printf("%f + %f = %f", rSum);
-        System.out.printf("%f - %f = %f", rSub);
-        System.out.printf("%f * %f = %f", rMul);
-        System.out.printf("%f / %f = %f", rDiv);
+        System.out.printf("%.2f + %.2f = %.2f\n", n1, n2, rSum);
+        System.out.printf("%.2f - %.2f = %.2f\n", n1, n2, rSub);
+        System.out.printf("%.2f * %.2f = %.2f\n", n1, n2, rMul);
+        System.out.printf("%.2f / %.2f = %.2f\n", n1, n2, rDiv);
     }
 }
