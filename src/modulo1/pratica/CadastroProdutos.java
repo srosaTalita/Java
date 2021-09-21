@@ -1,4 +1,4 @@
-package pratica;
+package modulo1.pratica;
 import java.util.*;
 
 public class CadastroProdutos {

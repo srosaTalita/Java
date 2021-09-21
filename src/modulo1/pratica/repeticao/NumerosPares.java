@@ -1,4 +1,4 @@
-package pratica.repeticao;
+package modulo1.pratica.repeticao;
 
 public class NumerosPares {
     public static void main(String[] args) {

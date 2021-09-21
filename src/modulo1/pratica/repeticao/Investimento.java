@@ -1,4 +1,4 @@
-package pratica.repeticao;
+package modulo1.pratica.repeticao;
 
 public class Investimento {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package pratica.repeticao;
+package modulo1.pratica.repeticao;
 
 import java.util.*;
 

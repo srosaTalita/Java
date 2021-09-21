@@ -1,5 +1,4 @@
-package pratica.condicional;
-import java.sql.SQLOutput;
+package modulo1.pratica.condicional;
 import java.util.*;
 
 public class Netflix {
