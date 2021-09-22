@@ -28,6 +28,10 @@ public class calculadora {
         return num1 / num2;
     }
 
+    static void printResult(double number1, double number2, char sign, double result) {
+        System.out.printf("%.2f %s %.2f = %.2f\n", number1, sign, number2, result);
+    }
+
     public static void main(String[] args) {
 
         double n1 = readNumber("Primeiro número: ");
@@ -36,9 +40,10 @@ public class calculadora {
         double rSub = subtraction(n1, n2);
         double rMul = multiplication(n1, n2);
         double rDiv = division(n1, n2);
-        System.out.printf("%.2f + %.2f = %.2f\n", n1, n2, rSum);
-        System.out.printf("%.2f - %.2f = %.2f\n", n1, n2, rSub);
-        System.out.printf("%.2f * %.2f = %.2f\n", n1, n2, rMul);
-        System.out.printf("%.2f / %.2f = %.2f\n", n1, n2, rDiv);
+
+        printResult(n1, n2, '+', rSum);
+        printResult(n1, n2, '-', rSub);
+        printResult(n1, n2, '*', rMul);
+        printResult(n1, n2, '/', rDiv);
     }
 }
