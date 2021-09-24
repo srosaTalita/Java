@@ -1,4 +1,4 @@
-package modulo.aula1_VS;
+package moduloVs1.aula1;
 
 public class part2 {
     public static void main(String[] args) {
