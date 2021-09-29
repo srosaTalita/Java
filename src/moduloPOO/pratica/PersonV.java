@@ -13,11 +13,7 @@ public class PersonV {
         p2.surname = "Sobrenome";
         p2.age = 18;
 
-        printPerson(p1);
-        printPerson(p2);
-    }
-
-    static void printPerson(Person p){
-        System.out.printf("%s %s, %d anos\n", p.name, p.surname, p.age);
+        p1.printPerson();
+        p2.printPerson();
     }
 }
