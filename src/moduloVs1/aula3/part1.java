@@ -1,7 +1,7 @@
 package moduloVs1.aula3;
 import java.util.*;
 
-public class parte1 {
+public class part1 {
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         char continua = 's';
