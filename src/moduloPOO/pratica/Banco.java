@@ -15,6 +15,24 @@ public class Banco {
         return op;
     }
 
+    static double valor(String mensagem){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(mensagem);
+        double val = Double.parseDouble(sc.nextLine());
+        
+        while(!validaValor(val)){
+            System.out.println("Valor Inválido! Digite novamente: ");
+            val = Double.parseDouble(sc.nextLine());
+        }
+        return val;
+    }
+
+    static boolean validaValor(double valor){
+        if(valor <= 0.0)
+            return false;
+        return true;
+    }
+
     static void escolhaMenu(int opcao, CalculadoraTaxa conta){
         double valor;
         int contador = 0;
@@ -22,8 +40,8 @@ public class Banco {
             switch(opcao){
                 case 1:
                     contador += 1;
-                    valor = conta.valor("Valor do Saque: ");
-                    if(conta.verificaSaldo(valor)){
+                    valor = valor("Valor do Saque: ");
+                    if(conta.saldoSuficiente(valor)){
                         System.out.printf("O valor debitado da conta foi: %.3f\n", conta.taxaSaque(valor, contador));
                     }
                     else{
@@ -31,8 +49,8 @@ public class Banco {
                     }
                     break;
                 case 2:
-                    valor = conta.valor("Valor da Transferência: ");
-                    if(conta.verificaSaldo(valor)){
+                    valor = valor("Valor da Transferência: ");
+                    if(conta.saldoSuficiente(valor)){
                         System.out.printf("O valor debitado da conta foi: %.3f\n", conta.taxaTransferencia(valor));
                     }
                     else{
@@ -40,7 +58,7 @@ public class Banco {
                     }        
                     break;
                 case 3:
-                    valor = conta.valor("Valor do Depósito: ");
+                    valor = valor("Valor do Depósito: ");
                     conta.depositar(valor);
                     System.out.println("Depósito feito com sucesso!");
                     break;

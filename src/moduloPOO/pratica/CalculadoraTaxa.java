@@ -1,9 +1,10 @@
 package moduloPOO.pratica;
-import java.util.Scanner;
 
 public class CalculadoraTaxa {
 
     private double saldo;
+    private double taxaSaque = 1.30;
+    private double taxaTransferencia = 0.001;
 
     public void fecharConta(){
         System.out.println("Conta fechada.");
@@ -18,14 +19,14 @@ public class CalculadoraTaxa {
     }
     
     public Double taxaTransferencia(double valorTransf){
-        valorTransf += (valorTransf * 0.001);
+        valorTransf += (valorTransf * taxaTransferencia);
         saldo -= valorTransf;
         return (valorTransf);
     }
 
     public double taxaSaque(double valorSaque, int contador){ 
         if(contador % 5 == 0){
-            valorSaque += (valorSaque + 1.30);
+            valorSaque += (valorSaque + taxaSaque);
             saldo -= valorSaque;
             return valorSaque;
         }
@@ -33,28 +34,10 @@ public class CalculadoraTaxa {
         return valorSaque;
     }
 
-    public boolean verificaSaldo(double valor){
+    public boolean saldoSuficiente(double valor){
         if(valor <= saldo())
             return true;
         return false;
-    }
-
-    static double valor(String mensagem){
-        Scanner sc = new Scanner(System.in);
-        System.out.println(mensagem);
-        double val = Double.parseDouble(sc.nextLine());
-        
-        while(!validaValor(val)){
-            System.out.println("Valor Inválido! Digite novamente: ");
-            val = Double.parseDouble(sc.nextLine());
-        }
-        return val;
-    }
-
-    static boolean validaValor(double valor){
-        if(valor <= 0.0)
-            return false;
-        return true;
     }
 
 }
