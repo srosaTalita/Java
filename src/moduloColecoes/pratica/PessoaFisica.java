@@ -1,7 +1,5 @@
 package moduloColecoes.pratica;
 
-import java.util.Set;
-
 public class PessoaFisica {
 
     private String codigo;
