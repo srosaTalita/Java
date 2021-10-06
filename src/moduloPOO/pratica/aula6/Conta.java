@@ -20,4 +20,8 @@ public class Conta {
     public void setCodigoCliente(String codigoCliente) {
         this.codigoCliente = codigoCliente;
     }
+
+    public void transferencia(Double valor){
+        saldo -= valor;
+    }
 }
