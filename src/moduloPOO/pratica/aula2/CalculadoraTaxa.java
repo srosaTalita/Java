@@ -1,4 +1,4 @@
-package moduloPOO.pratica;
+package moduloPOO.pratica.aula2;
 
 public class CalculadoraTaxa {
 

@@ -1,5 +1,7 @@
-package moduloPOO.pratica;
+package moduloPOO.pratica.aula2;
 import java.util.Scanner;
+
+import moduloPOO.pratica.aula2.CalculadoraTaxa;
 
 public class Banco {
     public static void main(String[] args) {

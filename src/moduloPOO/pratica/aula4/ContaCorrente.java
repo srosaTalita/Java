@@ -1,4 +1,4 @@
-package moduloPOO.pratica;
+package moduloPOO.pratica.aula4;
 
 public class ContaCorrente {
      

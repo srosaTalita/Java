@@ -1,4 +1,4 @@
-package moduloPOO.pratica;
+package moduloPOO.pratica.aula1;
 
 public class Person {
 
