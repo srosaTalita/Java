@@ -15,12 +15,9 @@ public class Teste {
         Double saldoAntigoC = cc.getSaldo();
         cc.setCodigoCliente("bbb222");
         
-        cc.transferencia(20.0);   
-        cc.transferencia(2.0);
-        cc.transferencia(2.0);
-        cc.transferencia(2.0);    
-        cc.transferencia(2.0);
-        cc.transferencia(2.0);
+        for (int i = 0; i < 6; i++) {
+            cc.transferencia(2.0);
+        }
 
         System.out.printf("\nCliente: %s | Saldo Antigo: %.2f\nSaldo atual: %.2f\n", cc.getCodigoCliente(), saldoAntigoC, cc.getSaldo());
     }
