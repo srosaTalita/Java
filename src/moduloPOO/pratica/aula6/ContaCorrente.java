@@ -34,7 +34,8 @@ public class ContaCorrente extends Conta{
     public void transferencia(Double valor) {
         super.transferencia(valor);
         this.setSaldo(this.getSaldo() - taxaTransferencia);
-        
+
+        this.setNumeroTransferencias(this.getNumeroTransferencias() + 1);
         if(this.getNumeroTransferencias() % 5 == 0){
             this.setSaldo(this.getSaldo() - taxaManuntencao);
         }

@@ -14,23 +14,12 @@ public class Teste {
         cc.setSaldo(100.0);
         Double saldoAntigoC = cc.getSaldo();
         cc.setCodigoCliente("bbb222");
-
-        cc.setNumeroTransferencias(cc.getNumeroTransferencias() + 1);
-        cc.transferencia(20.0);
         
-        cc.setNumeroTransferencias(cc.getNumeroTransferencias() + 1);
+        cc.transferencia(20.0);   
         cc.transferencia(2.0);
-
-        cc.setNumeroTransferencias(cc.getNumeroTransferencias() + 1);
         cc.transferencia(2.0);
-
-        cc.setNumeroTransferencias(cc.getNumeroTransferencias() + 1);
+        cc.transferencia(2.0);    
         cc.transferencia(2.0);
-        
-        cc.setNumeroTransferencias(cc.getNumeroTransferencias() + 1);
-        cc.transferencia(2.0);
-
-        cc.setNumeroTransferencias(cc.getNumeroTransferencias() + 1);
         cc.transferencia(2.0);
 
         System.out.printf("\nCliente: %s | Saldo Antigo: %.2f\nSaldo atual: %.2f\n", cc.getCodigoCliente(), saldoAntigoC, cc.getSaldo());
