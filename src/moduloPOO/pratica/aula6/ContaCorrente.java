@@ -2,9 +2,9 @@ package moduloPOO.pratica.aula6;
 
 public class ContaCorrente extends Conta{
     
-    private Double taxaTransferencia;
-    private Double taxaManuntencao;
-    private int numeroTransferencias;
+    private Double taxaTransferencia = 10.5;
+    private Double taxaManuntencao = 2.5;
+    private int numeroTransferencias = 0;
 
     public Double getTaxaTransferencia() {
         return taxaTransferencia;
