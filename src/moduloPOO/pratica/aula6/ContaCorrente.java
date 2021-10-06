@@ -22,11 +22,11 @@ public class ContaCorrente extends Conta{
         this.taxaManuntencao = taxaManuntencao;
     }
 
-    public int getNumeroTransferencias() {
+    private int getNumeroTransferencias() {
         return numeroTransferencias;
     }
 
-    public void setNumeroTransferencias(int numeroTransferencias) {
+    private void setNumeroTransferencias(int numeroTransferencias) {
         this.numeroTransferencias = numeroTransferencias;
     }
 
