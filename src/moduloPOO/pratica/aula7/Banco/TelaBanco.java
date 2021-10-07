@@ -1,4 +1,4 @@
-package moduloPOO.pratica.aula7;
+package moduloPOO.pratica.aula7.Banco;
 
 public class TelaBanco {
     public static void main(String[] args) {

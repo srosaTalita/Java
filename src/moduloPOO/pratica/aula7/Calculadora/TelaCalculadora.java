@@ -1,4 +1,4 @@
-package moduloPOO.pratica.aula7;
+package moduloPOO.pratica.aula7.Calculadora;
 
 public class TelaCalculadora {
     

@@ -1,6 +1,8 @@
-package moduloPOO.pratica.aula7;
+package moduloPOO.pratica.aula7.Calculadora;
 
 public class Calculadora {
+
+    //Sobrecarga de métodos:
     
     public int soma(int n1, int n2){
         return n1 + n2;

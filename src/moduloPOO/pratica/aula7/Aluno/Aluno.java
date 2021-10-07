@@ -1,4 +1,4 @@
-package moduloPOO.pratica.aula7;
+package moduloPOO.pratica.aula7.Aluno;
 
 public class Aluno {
     
@@ -30,6 +30,7 @@ public class Aluno {
         this.matricula = matricula;
     }
 
+    //Sobrescrita
     @Override
     public String toString() {
         return this.nome + ", " + this.matricula + ", " + this.idade + " anos.";

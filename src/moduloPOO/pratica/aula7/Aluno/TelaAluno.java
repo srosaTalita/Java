@@ -1,4 +1,4 @@
-package moduloPOO.pratica.aula7;
+package moduloPOO.pratica.aula7.Aluno;
 
 public class TelaAluno {
     public static void main(String[] args) {

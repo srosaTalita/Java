@@ -1,4 +1,4 @@
-package moduloPOO.pratica.aula7;
+package moduloPOO.pratica.aula7.Banco;
 
 public class ContaCorrente {
     
@@ -18,7 +18,7 @@ public class ContaCorrente {
     public void deposito(Double valor){
         saldo += valor;
     }
-
+    //Sobrescrita
     @Override
     public String toString() {
         return "\nCliente: " + this.codigoCliente + "\nTaxa Saque: " + this.taxaSaque + "\nSaldo: " + this.saldo + "\n";
