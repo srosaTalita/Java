@@ -1,8 +1,6 @@
 package moduloPOO.pratica.aula7;
 
-import java.util.Set;
-
-public class Tela {
+public class TelaAluno {
     public static void main(String[] args) {
         Aluno a1 = new Aluno();
         a1.setNome("Harry");
