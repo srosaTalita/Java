@@ -19,4 +19,8 @@ public class ContaCorrente {
         saldo += valor;
     }
 
+    @Override
+    public String toString() {
+        return "\nCliente: " + this.codigoCliente + "\nTaxa Saque: " + this.taxaSaque + "\nSaldo: " + this.saldo + "\n";
+    }
 }
