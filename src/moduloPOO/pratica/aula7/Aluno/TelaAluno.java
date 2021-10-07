@@ -6,12 +6,14 @@ public class TelaAluno {
         a1.setNome("Harry");
         a1.setMatricula("a0b1");
         a1.setIdade(11);
-        System.out.println(a1.toString());
+        //Funcionalidade do método toString sobrescrito na classe Aluno:
+        System.out.println(a1);
 
         Aluno a2 = new Aluno();
         a2.setNome("Ron");
         a2.setIdade(12);
         a2.setMatricula("c2d3");
-        System.out.println(a2.toString());
+        //Funcionalidade do método toString sobrescrito na classe Aluno:
+        System.out.println(a2);
     }
 }
