@@ -32,6 +32,7 @@ public class Aluno {
 
     @Override
     public String toString() {
-        return super.toString();
+        String objeto = this.nome + ", " + this.matricula + ", " + this.idade + " anos.";
+        return objeto;
     }
 }
