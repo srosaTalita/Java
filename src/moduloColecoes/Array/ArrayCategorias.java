@@ -1,4 +1,4 @@
-package moduloColecoes;
+package moduloColecoes.Array;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package moduloColecoes;
+package moduloColecoes.Array;
 
 public class ArrayString {
     public static void main(String[] args) {
