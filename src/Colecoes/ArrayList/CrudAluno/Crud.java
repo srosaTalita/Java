@@ -1,4 +1,4 @@
-package moduloColecoes.ArrayList.CrudAluno;
+package Colecoes.ArrayList.CrudAluno;
 import java.util.*;
 
 public class Crud {

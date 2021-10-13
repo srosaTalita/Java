@@ -1,4 +1,4 @@
-package moduloColecoes.Array.aula1;
+package Colecoes.Array.aula1;
 
 public class Categoria {
     

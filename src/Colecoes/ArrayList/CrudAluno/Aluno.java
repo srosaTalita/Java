@@ -1,4 +1,4 @@
-package moduloColecoes.ArrayList.CrudAluno;
+package Colecoes.ArrayList.CrudAluno;
 
 public class Aluno {
     

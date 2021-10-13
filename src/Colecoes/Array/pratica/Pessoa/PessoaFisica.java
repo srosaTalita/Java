@@ -1,4 +1,4 @@
-package moduloColecoes.Array.pratica.Pessoa;
+package Colecoes.Array.pratica.Pessoa;
 
 public class PessoaFisica {
 
