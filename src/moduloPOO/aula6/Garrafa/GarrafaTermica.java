@@ -1,4 +1,4 @@
-package moduloPOO.aula6.parte1;
+package moduloPOO.aula6.Garrafa;
 
 public class GarrafaTermica extends Garrafa{
     

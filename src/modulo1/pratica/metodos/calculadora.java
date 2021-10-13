@@ -1,4 +1,4 @@
-package modulo2.pratica.metodos;
+package modulo1.pratica.metodos;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package moduloColecoes.Array;
+package moduloColecoes.Array.aula1;
 
 import java.util.Scanner;
 

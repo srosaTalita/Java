@@ -1,4 +1,4 @@
-package moduloColecoes.pratica;
+package moduloColecoes.Array.pratica.Numeros;
 
 public class Numeros {
     public static void main(String[] args) {

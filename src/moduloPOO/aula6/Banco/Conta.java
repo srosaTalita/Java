@@ -1,4 +1,4 @@
-package moduloPOO.aula6.parte2;
+package moduloPOO.aula6.Banco;
 
 public class Conta {
     private double saldo;

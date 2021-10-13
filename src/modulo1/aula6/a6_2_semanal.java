@@ -1,7 +1,5 @@
 package modulo1.aula6;
 
-import java.sql.SQLOutput;
-
 public class a6_2_semanal {
     public static void main(String[] args) {
 

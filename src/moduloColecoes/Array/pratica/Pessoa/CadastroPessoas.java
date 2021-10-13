@@ -1,4 +1,4 @@
-package moduloColecoes.pratica;
+package moduloColecoes.Array.pratica.Pessoa;
 
 import java.util.Scanner;
 

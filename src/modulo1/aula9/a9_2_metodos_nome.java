@@ -1,4 +1,4 @@
-package modulo2.aula9;
+package modulo1.aula9;
 
 public class a9_2_metodos_nome {
 
