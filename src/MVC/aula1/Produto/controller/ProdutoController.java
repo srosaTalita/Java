@@ -1,7 +1,7 @@
-package Produto.controller;
+package aula1.Produto.controller;
 import java.util.*;
 
-import Produto.model.Produto;
+import aula1.Produto.model.Produto;
 
 public class ProdutoController {
     

@@ -1,8 +1,8 @@
-package Produto.view;
+package aula1.Produto.view;
 import java.util.*;
 
-import Produto.controller.ProdutoController;
-import Produto.model.Produto;
+import aula1.Produto.controller.ProdutoController;
+import aula1.Produto.model.Produto;
 
 public class ProdutoView {
     
