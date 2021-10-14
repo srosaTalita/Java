@@ -1,4 +1,4 @@
-package model;
+package Produto.model;
 
 public class Produto extends BaseModel{
     
