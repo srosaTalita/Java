@@ -11,4 +11,9 @@ public abstract class BaseModel {
     public void setId(int id) {
         this.id = id;
     }
+
+    public int createId(){
+        id++;
+        return id;
+    }
 }
