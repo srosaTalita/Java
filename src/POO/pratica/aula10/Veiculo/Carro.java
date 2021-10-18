@@ -1,3 +1,4 @@
+package Veiculo;
 public class Carro {
     
     public int nPortas;
