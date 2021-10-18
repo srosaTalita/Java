@@ -1,6 +1,6 @@
 public class Veiculo {
     
-    private String marca;
-    private String modelo;
-    private String placa;
+    public String marca;
+    public String modelo;
+    public String placa;
 }
