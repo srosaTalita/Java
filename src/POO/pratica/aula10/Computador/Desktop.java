@@ -8,6 +8,6 @@ public class Desktop extends Computador{
 
     @Override
     public String toString() {
-        return "Gabinete:  " + tamanhoGabinete + " | Monitor Externo: " + monitorExterno + " | Fonte: " + fonte; 
+        return "Computador " + marca + ", " + memoriaRam + " de ram, processador " + processador + ", " + discoRigido + "\nGabinete:  " + tamanhoGabinete + " | Monitor Externo: " + monitorExterno + " | Fonte: " + fonte; 
     }
 }
