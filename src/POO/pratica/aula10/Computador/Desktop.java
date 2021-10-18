@@ -1,6 +1,6 @@
 package Computador;
 
-public class Desktop {
+public class Desktop extends Computador{
     
     public String tamanhoGabinete;
     public String monitorExterno;
@@ -8,6 +8,6 @@ public class Desktop {
 
     @Override
     public String toString() {
-        return "Gabinete:  " + tamanhoGabinete + " +| Monitor Externo: " + monitorExterno + " | Fonte: " + fonte; 
+        return "Gabinete:  " + tamanhoGabinete + " | Monitor Externo: " + monitorExterno + " | Fonte: " + fonte; 
     }
 }

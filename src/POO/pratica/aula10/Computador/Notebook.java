@@ -8,6 +8,6 @@ public class Notebook extends Computador{
 
     @Override
     public String toString() {
-        return "Bateria " + bateria + ", " + velocidadeWifi+ " de ram, Bluettoth" + versaoBluetooth; 
+        return "Bateria " + bateria + ", " + velocidadeWifi+ ", Bluettoth " + versaoBluetooth; 
     }
 }
