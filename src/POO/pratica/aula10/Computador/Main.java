@@ -1,4 +1,4 @@
-package Computador;
+package pratica.aula10.Computador;
 
 public class Main {
 
