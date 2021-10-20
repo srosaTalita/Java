@@ -24,24 +24,24 @@ public class Dados {
         }
     }
 
-    public void remove(Object obj){
-        for (int i = 0; i < dados.length; i++) {
-            if(obj.equals(dados[i])){
+    // public void remove(Object obj){
+    //     for (int i = 0; i < dados.length; i++) {
+    //         if(obj.equals(dados[i])){
 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
 
-    public boolean existe(Object obj){
-        return igual(obj);
-    }
+    // public boolean existe(Object obj){
+    //     return igual(obj);
+    // }
 
-    private void reorganizaArray(int pos){
-        if(posicao >= this.dados.length + 5);
-        Object[ dados2 = new Object[novoTamanho];
-        for (i = 0; i < dados.length; i++) {
-            dados[i] = dados[i + 1];
-        }
-        posicao--;
-    }
+    // private void reorganizaArray(int pos){
+    //     if(posicao >= this.dados.length + 5);
+    //     Object[ dados2 = new Object[novoTamanho];
+    //     for (i = 0; i < dados.length; i++) {
+    //         dados[i] = dados[i + 1];
+    //     }
+    //     posicao--;
+    // }
 }
