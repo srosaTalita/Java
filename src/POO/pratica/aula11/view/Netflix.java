@@ -1,6 +1,5 @@
 package view;
 
-
 import controller.FilmeController;
 import controller.SerieController;
 import model.Filme;
@@ -13,6 +12,7 @@ public class Netflix {
         FilmeController fc = new FilmeController();
         SerieController sc = new SerieController();
     
+        System.out.println("--------Criou 2 filmes e uma serie---------");
         Filme filme = new Filme();
         filme.id = 1;
         filme.titulo = "HP - PF";
@@ -38,38 +38,36 @@ public class Netflix {
         fc.create(filme2);
         sc.create(serie);
 
-        for (Filme f : fc.read()) {
-            System.out.println(f);
-        }
+        fc.show(fc.read());
 
-        for (Serie s : sc.read()) {
-            System.out.println(s);
-        }
+        sc.show(sc.read());
 
-        System.out.println("----------------------------");
+        System.out.println("\n-------Removeu o primerio filme---------");
 
         fc.delete(filme);
 
-        for (Filme f : fc.read()) {
-            System.out.println(f);
-        }
+        fc.show(fc.read());
 
-        System.out.println("----------------------------");
+        sc.show(sc.read());
+
+        System.out.println("\n--------Atualizou o segundo filme-------");
         
         Filme filme3 = new Filme();
         filme2.id = 2;
-        filme2.titulo = "HP - PA";
+        filme2.titulo = "Harry Potter e a Câmara Secreta";
         filme2.lancamento = "2002";
-        filme2.genero = "fantasia";
-        filme2.duracao = "02:40";
+        filme2.genero = "fantasia e aventura";
+        filme2.duracao = "02:41";
 
         fc.update(filme3);
 
-        for (Filme f : fc.read()) {
-            System.out.println(f);
-        }
+        fc.show(fc.read());
+
+        sc.show(sc.read());
 
         System.out.println("----------------------------");
+
+        System.out.println(fc.find(filme2));
     }
     
 }

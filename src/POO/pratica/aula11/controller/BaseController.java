@@ -37,4 +37,10 @@ public class BaseController<T>{
     public boolean find(T obj){
         return this.lista.contains(obj);
     }
+
+    public void show(ArrayList<T> lista){
+        for (T t : lista) {
+            System.out.println(t);
+        }
+    }
 }

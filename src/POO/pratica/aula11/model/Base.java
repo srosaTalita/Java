@@ -9,6 +9,6 @@ public class Base {
 
     @Override
     public String toString() {
-        return id + " - " + titulo + ", " + genero + "\nLançamento: " + lancamento;
+        return id + " : " + titulo + ", " + genero + "\nLançamento: " + lancamento;
     }
 }
