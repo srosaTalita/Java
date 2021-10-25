@@ -3,9 +3,29 @@ package ATP30;
 import java.util.Scanner;
 
 public class Calculadora {
-
+    
     static Scanner sc = new Scanner(System.in);
-   
+    public static void main(String[] args) {
+        head();
+        menu();
+        int option;
+        boolean invalido;
+        do{
+            try{
+                option = readNumber("Opção: ");
+                invalido = false;
+                if(option < 1 || option > 5){
+                    throw new IllegalArgumentException("Opção Inválida!");
+                }
+            }catch(IllegalArgumentException e){
+                invalido = true;
+                option = 0;
+            }
+        }while(invalido);
+        chooseMenu(option);
+        
+    }
+    
     static void head(){
         System.out.println("----------------------------------------------------------");
         System.out.println("----------------------- Calculadora ----------------------");
@@ -21,28 +41,35 @@ public class Calculadora {
     }
 
     static void chooseMenu(int option){
-        int resultOp = 0;      
-        int n1 = readNumber("Primeiro número: ");
-        int n2 = readNumber("Segundo número: ");
+        int n1, n2, resultOp = 0;      
 
         switch (option){
             case(1) :
+                n1 = readNumber("Primeiro número: ");
+                n2 = readNumber("Segundo número: ");
                 resultOp = sum(n1, n2);
                 break;
 
             case(2) :
+                n1 = readNumber("Primeiro número: ");
+                n2 = readNumber("Segundo número: ");
                 resultOp = subtraction(n1, n2);
                 break;
 
             case(3) :
+                n1 = readNumber("Primeiro número: ");
+                n2 = readNumber("Segundo número: ");
                 resultOp = multiplication(n1, n2);
                 break;
 
             case(4) :
+                n1 = readNumber("Primeiro número: ");
+                n2 = readNumber("Segundo número: ");
                 resultOp = division(n1, n2);
                 break;
 
             case(5) :
+                System.out.println("Até mais");
                 return;
         }
         System.out.printf("O resultado da operação é %d", resultOp);
@@ -55,7 +82,7 @@ public class Calculadora {
             number = Integer.parseInt(sc.nextLine());
         }
         catch(NumberFormatException e){
-            // System.out.println(e.getMessage()); // mostra o erro gerado
+            System.out.printf("Erro: %s\n", e.getMessage()); // mostra o erro gerado
             System.out.println("Precisa ser um número inteiro!");
             number = readNumber(message);
         }
@@ -80,20 +107,11 @@ public class Calculadora {
             div = num1 / num2; 
         } 
         catch (ArithmeticException e) {
-            // System.out.println(e.getMessage()); // mostra o erro gerado
+            System.out.printf("\nErro: %s\n", e.getMessage()); // mostra o erro gerado
             System.out.println("Divisor não pode ser 0!");
             num2 = readNumber("Segundo número: ");
             div = division(num1, num2);
         }
         return div;
     }
-
-    public static void main(String[] args) {
-        head();
-        menu();
-        int option = readNumber("Opção: ");
-        chooseMenu(option);
-    }
-
-
 }
