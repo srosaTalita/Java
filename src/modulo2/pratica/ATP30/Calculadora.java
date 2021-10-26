@@ -1,4 +1,4 @@
-package ATP30;
+package pratica.ATP30;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ public class Calculadora {
     public static void main(String[] args) {
         head();
         menu();
-        int option;
+        int option = 0;
         boolean invalido;
         do{
             try{
@@ -18,12 +18,11 @@ public class Calculadora {
                     throw new IllegalArgumentException("Opção Inválida!");
                 }
             }catch(IllegalArgumentException e){
+                System.out.println("Opcão Inválida!");
                 invalido = true;
-                option = 0;
             }
         }while(invalido);
-        chooseMenu(option);
-        
+        chooseMenu(option);        
     }
     
     static void head(){
