@@ -75,17 +75,18 @@ public class Main {
     }
 
     static void chooseMenu(int option){    
+        Produtos prod;
 
         switch (option){
+
             case(1) :
-                Produtos prod = new Produtos();
+                prod = new Produtos();
                 prod.id = readInt("ID Produto: ");
                 prod.nome = readString("Nome: ");
                 prod.valor = readString("Preço: ");
                 prod.categoria.marca = readString("Marca: ");
                 prod.categoria.tipo = readString("Tipo: ");
                 prodC.create(prod);
-                System.out.println("Produto cadastrado com sucesso!");
                 break;
 
             case(2) :
@@ -96,20 +97,18 @@ public class Main {
                 break;
 
             case(3) :
-                Produtos prod3 = new Produtos();
-                prod3.id = readInt("ID Produto: ");
-                prod3.nome = readString("Nome: ");
-                prod3.valor = readString("Preço: ");
-                prod3.categoria.marca = readString("Marca: ");
-                prod3.categoria.tipo = readString("Tipo: ");
-                prodC.update(prod3);
-                System.out.println("Produto atualizado com sucesso!");
+                prod = new Produtos();
+                prod.id = readInt("ID Produto: ");
+                prod.nome = readString("Nome: ");
+                prod.valor = readString("Preço: ");
+                prod.categoria.marca = readString("Marca: ");
+                prod.categoria.tipo = readString("Tipo: ");
+                prodC.update(prod);
                 break;
 
             case(4) :
-                Produtos prod4 = new Produtos();
-                prod4.id = readInt("ID Produto: ");
-                System.out.println("Produto removido com sucesso!");
+                prod = new Produtos();
+                prod.id = readInt("ID Produto: ");
                 break;
 
             case(5) :
