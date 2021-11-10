@@ -4,7 +4,7 @@ create table produto(
 	nome varchar(50) not null,
 	descricao varchar(100) not null,
 	codigo varchar(20) not null,
-	preco float not null
+	preco float not null -- float/numeric(5,0)/decimal
 );
 
 create table categoria(
