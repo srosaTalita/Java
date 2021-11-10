@@ -28,9 +28,8 @@ alter table carro
 alter table produto 
 	drop column codigo;
 	
--- Deletanto a tabela carro e categoria
+-- Deletanto a tabela carro 
 drop table carro;
-drop table categoria;
 
 -- Adicionando id_categoria na tabela produto
 alter table produto 
