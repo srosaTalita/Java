@@ -1,0 +1,11 @@
+_  Crie um sistema para cadastro de Empresas. A empresa deve possuir três atributos públicos: nome, cnpj e ramo de atividade
+_  Utilize o padrão DAO para criar uma estrutura de armazenamento de dados em um arquivo do tipo CSV.
+_  A estrutura de armazenamento deve apenas salvar e ler os dados. 
+_  Os dados devem ser convertidos de Objeto para String ao salvar.
+_  Os dados devem ser convertidos de String para Objeto ao ler.
+_  Utilize os métodos de leitura e escrita em uma classe View.
+
+_  Crie um sistema para cadastro de Pontos Turísticos. A classe de modelo deve possuir três atributos públicos: nome, descrição e localização.
+_  Crie uma interface que contenha os métodos de leitura e gravação de dados para pontos turísticos.
+_  Crie duas implementações da interface. Uma que usará um lista para armazenar os dados e outra que utilizará um arquivo texto como fonte de dados.
+_  Crie duas classes View para testar cada uma das implementações criadas.

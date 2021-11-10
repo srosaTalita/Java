@@ -1,4 +1,4 @@
-package view;
+package pratica.ATP38.view;
 
 import java.io.*;
 
