@@ -17,7 +17,6 @@ create table estado(
 create table cidade(
 	id int primary key generated always as identity,
 	nome varchar(100),
-	sigla varchar(10),
 	estado_id int not null,
 	constraint fk_estado foreign key(estado_id) references estado(id)
 );
@@ -30,7 +29,7 @@ insert into estado(nome, sigla, pais_id)
 	values('Bahia', 'BA', 1);
 	
 insert into cidade(nome, sigla, estado_id)
-	values('Feira de Santana', 'FSA', 1);
+	values('Feira de Santana', 1);
 
 commit;
 end;
