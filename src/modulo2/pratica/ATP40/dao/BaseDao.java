@@ -1,23 +1,23 @@
-package pratica.ATP40.dao;
+// package pratica.ATP40.dao;
 
-import java.io.*;
+// import java.io.*;
 
-public class BaseDao<T extends Base> implements IDao<T>{
+// public class BaseDao<T extends Base> implements IDao<T>{
     
-    protected String filename;
+//     protected String filename;
 
-    public BaseDao(String filename){
-        this.filename = filename;
-    }
+//     public BaseDao(String filename){
+//         this.filename = filename;
+//     }
 
-    public void save(T model){
-        try {
-            FileWriter fw = new FileWriter(filename, true);
-            fw.write(model.toString() + "\n");
-            fw.close();
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
-    }
-}
+//     public void save(T model){
+//         try {
+//             FileWriter fw = new FileWriter(filename, true);
+//             fw.write(model.toString() + "\n");
+//             fw.close();
+//         }
+//         catch(IOException e){
+//             e.printStackTrace();
+//         }
+//     }
+// }
