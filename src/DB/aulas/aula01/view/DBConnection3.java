@@ -9,7 +9,7 @@ public class DBConnection3 {
             Connection conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "123456789");
        
             Statement statement = conn.createStatement();
-            String sql = "INSERT INTO pessoa(nome, sobrenome, idade, endereco_id)values('Teste', 'Java', 2, 1)";
+            String sql = "INSERT INTO produto(nome, descricao, preco, id_categoria)values('carne', 'vermelha', 5, 1)";
 
             statement.execute(sql, statement.RETURN_GENERATED_KEYS);            
             ResultSet ids = statement.getGeneratedKeys();
