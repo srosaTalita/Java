@@ -11,7 +11,7 @@ public class DBConnection3 {
             Statement statement = conn.createStatement();
             String sql = "INSERT INTO produto(nome, descricao, preco, id_categoria)values('carne', 'vermelha', 5, 1)";
 
-            statement.execute(sql, statement.RETURN_GENERATED_KEYS);            
+            statement.execute(sql, Statement.RETURN_GENERATED_KEYS);            
             ResultSet ids = statement.getGeneratedKeys();
 
             while(ids.next()){

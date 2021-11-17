@@ -10,7 +10,7 @@ public class Create {
 
             Statement statement = conn.createStatement();
             String sql = "INSERT INTO produto(nome, descricao, preco, id_categoria) VALUES('shampoo', 'anticaspa', 8.0, 2)";
-            statement.execute(sql, statement.RETURN_GENERATED_KEYS);
+            statement.execute(sql, Statement.RETURN_GENERATED_KEYS);
             ResultSet info = statement.getGeneratedKeys();
 
             while(info.next()){
