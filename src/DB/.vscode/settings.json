@@ -1,6 +1,8 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "c:\\Users\\tarosa\\Downloads\\postgresql-42.3.1.jar" //mudar a pasta de lugar, muda esse caminho também
+        "c:\\Users\\tarosa\\Downloads\\postgresql-42.3.1.jar",
+        "c:\\Users\\tarosa\\Downloads\\c3p0-0.9.5.4.jar",
+        "c:\\Users\\tarosa\\Downloads\\mchange-commons-java-0.2.15.jar"
     ]
 }
