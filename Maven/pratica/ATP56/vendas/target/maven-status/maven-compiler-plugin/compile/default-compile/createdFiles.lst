@@ -1,0 +1,7 @@
+com\rosa\vendas\models\Produto.class
+com\rosa\vendas\dao\ConnectionFactory.class
+com\rosa\vendas\servlets\ProdutoServlet.class
+com\rosa\vendas\dao\CategoriaDao.class
+com\rosa\vendas\models\Categoria.class
+com\rosa\vendas\servlets\CategoriaReadServlet.class
+com\rosa\vendas\servlets\CategoriaServlet.class
