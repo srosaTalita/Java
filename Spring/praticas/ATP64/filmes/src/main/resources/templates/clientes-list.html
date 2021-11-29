@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1>Lista de Clientes</h1>
+    <a href="/clientes/cadastro">Cadastrar Cliente</a><br>
     <table>
         <thead>
             <tr>
@@ -24,7 +25,8 @@
             <td th:text = "${c.sobrenome}"></td>
             <td th:text = "${c.idade}"></td>
             <td>
-                
+                <a th:href="@{'/clientes/editar/'+${c.id}}">Editar</a>
+                <a th:href="@{'/clientes/deletar/'+${c.id}}">Deletar</a>
             </td>
         </tbody>
     </table>
